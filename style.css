@@ -1,0 +1,79 @@
+body{
+    background-color: #002B5B;
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh ;
+    
+}
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    width: 100vw;
+    gap: 15px;
+   justify-content: center;
+}
+
+.p1-ships{
+    color:aliceblue;
+    padding: 1rem;
+    width:16rem;
+    height: fit-content;
+    background-color: #1A5F7A;
+    visibility: hidden;
+    position:absolute;
+    left: 40%;
+    right: 40%;
+    border-radius: 1rem;
+}
+.player1-grid,.player2-grid{
+    display: flex;
+    width: 520px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.unit{
+    width: 48px;
+    height: 48px;
+    border: 0.2px black solid;
+    background-color: #1A5F7A;
+}
+.unit:hover{
+    cursor: cell;
+}
+.miss-unit{
+    background-color: rgb(124, 44, 44);
+    
+}
+.empty-unit{
+    background-color: #57C5B6;
+}
+
+.hit-unit{
+    background-color: rgb(27, 87, 27);
+}
+.sunk-unit{
+    background-color: black;
+}
+
+.player-name,h1{
+    color: #57C5B6;
+    text-align: center;
+    
+}
+button{
+    width: 5rem;
+    background-color: #14495e;
+    border-width: 0;
+    border-radius: 20px;
+    outline: 0;
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding:0.5rem;
+}
